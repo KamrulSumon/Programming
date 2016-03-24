@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class AdjacencyGraph {
 	Scanner sc = new Scanner(System.in);
+	
 	private final int MAX_VERTEX = 100;		// number of vertex
 	public final int MAX_DEGREE = 50;		// number of edge
 	
@@ -13,10 +14,19 @@ public class AdjacencyGraph {
 	int nvertices;							// number of vertex in graph
 	int nedges;								// number of edges in graph
 	
+	boolean processed[];   //Which vertices have been processed
+	boolean discovered[];  // which vertices have been found
+	int parent[];		   // discovery realtionship
+	int distance[];
+	
 	
 	public AdjacencyGraph(){
 		edges = new int[MAX_VERTEX][MAX_DEGREE];
 		degree = new int[MAX_VERTEX];
+		processed = new boolean[MAX_VERTEX];
+		discovered = new boolean[MAX_VERTEX];
+		parent = new int[MAX_VERTEX];
+		distance = new int[MAX_VERTEX];
 	}
 
 	// Initialize the graph
