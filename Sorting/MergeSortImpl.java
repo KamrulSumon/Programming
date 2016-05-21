@@ -1,4 +1,4 @@
-package com.sumon.datastructure.stack;
+package com.sumon.sorting.mergesort;
 
 import static java.lang.System.out;
 
