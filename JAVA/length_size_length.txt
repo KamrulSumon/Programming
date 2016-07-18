@@ -1,0 +1,7 @@
+length --- arrays (int[], double[], String[]) ---- to know the length of the arrays.
+
+length() --- String related Object (String, StringBuilder etc)to know the length of the String
+
+size() --- Collection Object (ArrayList, Set etc)to know the size of the Collection
+
+
